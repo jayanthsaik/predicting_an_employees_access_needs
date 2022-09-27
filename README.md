@@ -1,6 +1,6 @@
 # predicting_an_employees_access_needs
 
-# 1.importing datasets
+# 1. Importing Datasets :
 
 #importing required packages,
 import matplotlib.pyplot as plt [#plotting library extension for numpy]
@@ -15,7 +15,7 @@ print(data.shape)[#printing data]
 data.head()
 
 
-# 2.data exploration:
+# 2. Data Exploration :
 
 data_explore = data.copy()  
 #copying data
