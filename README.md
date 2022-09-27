@@ -1,6 +1,6 @@
 # predicting_an_employees_access_needs
 
-1.importing datasets
+# 1.importing datasets
 
 #importing required packages,
 import matplotlib.pyplot as plt [#plotting library extension for numpy]
@@ -15,14 +15,14 @@ print(data.shape)[#printing data]
 data.head()
 
 
-2.data exploration:
+# 2.data exploration:
 
 data_explore = data.copy()  
 #copying data
 data_explore.info()
 #finding null values
 data_explore.nunique()
-# an employee can have only one manager at a time, then we can consider that the dataset contains information of maximum 4243 employees.
+an employee can have only one manager at a time, then we can consider that the dataset contains information of maximum 4243 employees.
 There are same number of unique values for ROLE_TITLE and ROLE_CODE. There is 1-to-1 mapping between these columns. So for our problem only one feature is sufficent.
 
 sns.countplot(x='ACTION', data=data_explore)
